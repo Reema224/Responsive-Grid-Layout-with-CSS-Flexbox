@@ -43,16 +43,19 @@ body{
     max-width: 100%;
     border: 5px solid #403e3e;
     
+    
 }
 
 
 .product-container {
+    border: 5px solid #403e3e;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .item {
+    
     width: 400px;
     margin: 20px;
     background-color: #eae2e6;
@@ -66,27 +69,57 @@ body{
     margin-bottom: 10px;
     margin-left: 55px;
 }
-
+.image:hover {
+    border: 5px solid #d63d84;
+    transform: scale(1.4);
+}
 .title {
     font-size: 24px;
     margin-left: 55px;
 }
-
+.title:hover {
+    background-color: #d63d84;
+}
 .price {
     font-size: 16px;
     margin-bottom: 10px;
     font-weight: bold;
     margin-left: 55px;
 }
+.price:hover {
+        background-color: #d63d84;
+}
 
 .description {
     font-size: 16px;
     margin-left: 55px;
 }
+.description:hover {
+    background-color: #d63d84;
+}
+.footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #403e3e;
+    color: #fff;
+}
+.name{
+    color: #fff;
+    
+   
+}
+.mail{
+    color: #d63d84;
+}
+.mail:hover{
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 767px) {
     .navbar {
         flex-direction: column;
     }
+    
 
     .links {
         margin-top: 20px;
@@ -106,6 +139,13 @@ body{
 }
 
 @media only screen and (max-width: 479px) {
-    
+    .item {
+            width: 100%;
+        }
+}
+@media only screen and (max-width: 479px) {
+    .item{
+        width: 100%;
+    }
 }
 
